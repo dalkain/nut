@@ -62,11 +62,11 @@ class Paths:  # pylint: disable=too-many-instance-attributes
 	"""
 
 	def __init__(self):
-		self.titleBase = 'titles/{name}[{id}][v{version}].nsp'
-		self.titleDLC = 'titles/DLC/{name}[{id}][v{version}].nsp'
-		self.titleUpdate = 'titles/updates/{name}[{id}][v{version}].nsp'
-		self.titleDemo = 'titles/demos/{name}[{id}][v{version}].nsp'
-		self.titleDemoUpdate = 'titles/demos/updates/{name}[{id}][v{version}].nsp'
+		self.titleBase = 'titles/{name}[{id}][{region}][v{version}].nsp'
+		self.titleDLC = 'titles/DLC/{name}[{id}][{region}][v{version}].nsp'
+		self.titleUpdate = 'titles/updates/{name}[{id}][{region}][v{version}].nsp'
+		self.titleDemo = 'titles/demos/{name}[{id}][{region}][v{version}].nsp'
+		self.titleDemoUpdate = 'titles/demos/updates/{name}[{id}][{region}][v{version}].nsp'
 
 		self.nsxTitleBase = None
 		self.nsxTitleDLC = None
@@ -74,11 +74,11 @@ class Paths:  # pylint: disable=too-many-instance-attributes
 		self.nsxTitleDemo = None
 		self.nsxTitleDemoUpdate = None
 
-		self.nszTitleBase = '/gamefiles/Base/{name}[{id}][v{version}].nsz'
-		self.nszTitleDLC = '/gamefiles/DLC/{name}[{id}][v{version}].nsz'
-		self.nszTitleUpdate = '/gamefiles/Updates/{name}[{id}][v{version}].nsz'
-		self.nszTitleDemo = '/gamefiles/demos/{name}[{id}][v{version}].nsz'
-		self.nszTitleDemoUpdate = '/gamefiles/demos/updates/{name}[{id}][v{version}].nsz'
+		self.nszTitleBase = '/gamefiles/Base/{name}[{id}][{region}][v{version}].nsz'
+		self.nszTitleDLC = '/gamefiles/DLC/{name}[{id}][{region}][v{version}].nsz'
+		self.nszTitleUpdate = '/gamefiles/Updates/{name}[{id}][{region}][v{version}].nsz'
+		self.nszTitleDemo = '/gamefiles/demos/{name}[{id}][{region}][v{version}].nsz'
+		self.nszTitleDemoUpdate = '/gamefiles/demos/updates/{name}[{id}][{region}][v{version}].nsz'
 
 		self.xciTitleBase = None
 		self.xciTitleDLC = None
