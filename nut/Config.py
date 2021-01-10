@@ -74,11 +74,11 @@ class Paths:  # pylint: disable=too-many-instance-attributes
 		self.nsxTitleDemo = None
 		self.nsxTitleDemoUpdate = None
 
-		self.nszTitleBase = None
-		self.nszTitleDLC = None
-		self.nszTitleUpdate = None
-		self.nszTitleDemo = None
-		self.nszTitleDemoUpdate = None
+		self.nszTitleBase = /gamefiles/Base/{name}[{id}][v{version}].nsz
+		self.nszTitleDLC = /gamefiles/DLC/{name}[{id}][v{version}].nsz
+		self.nszTitleUpdate = /gamefiles/Updates/{name}[{id}][v{version}].nsz
+		self.nszTitleDemo = /gamefiles/demos/{name}[{id}][v{version}].nsz
+		self.nszTitleDemoUpdate = /gamefiles/demos/updates/{name}[{id}][v{version}].nsz
 
 		self.xciTitleBase = None
 		self.xciTitleDLC = None
