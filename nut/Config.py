@@ -62,11 +62,11 @@ class Paths:  # pylint: disable=too-many-instance-attributes
 	"""
 
 	def __init__(self):
-		self.titleBase = 'titles/{name}[{id}][{region}][v{version}].nsp'
-		self.titleDLC = 'titles/DLC/{name}[{id}][{region}][v{version}].nsp'
-		self.titleUpdate = 'titles/updates/{name}[{id}][{region}][v{version}].nsp'
-		self.titleDemo = 'titles/demos/{name}[{id}][{region}][v{version}].nsp'
-		self.titleDemoUpdate = 'titles/demos/updates/{name}[{id}][{region}][v{version}].nsp'
+		self.titleBase = '/gamefiles/Base/{name}[{id}][{region}][v{version}].nsp'
+		self.titleDLC = '/gamefiles/DLC/{name}[{id}][{region}][v{version}].nsp'
+		self.titleUpdate = '/gamefiles/Updates/{name}[{id}][{region}][v{version}].nsp'
+		self.titleDemo = '/gamefiles/demos/{name}[{id}][{region}][v{version}].nsp'
+		self.titleDemoUpdate = '/gamefiles/demos/updates/{name}[{id}][{region}][v{version}].nsp'
 
 		self.nsxTitleBase = None
 		self.nsxTitleDLC = None
@@ -86,13 +86,13 @@ class Paths:  # pylint: disable=too-many-instance-attributes
 		self.xciTitleDemo = None
 		self.xciTitleDemoUpdate = None
 
-		self.scan = ['.']
+		self.scan = ['/gamefiles']
 		self.titleDatabase = 'titledb'
 		self.keys = 'keys.txt'
 		self.calibration = 'PRODINFO.bin'
 		self.shopNCert = 'ShopN.pem'
 		self.nspOut = '_NSPOUT'
-		self.titleImages = 'titles/images/'
+		self.titleImages = '/gamefiles/images/'
 
 		self.duplicates = 'duplicates/'
 
